@@ -1,0 +1,1869 @@
+[06-Dec-2024 03:48:35 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:48:35 UTC] Usuario admin (master) ha iniciado sesión exitosamente
+[06-Dec-2024 03:48:35 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:48:35 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 03:48:35 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 03:48:48 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:48:48 UTC] Tipo de usuario: master
+[06-Dec-2024 03:48:48 UTC] ID de usuario: 1
+[06-Dec-2024 03:48:48 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[06-Dec-2024 03:48:48 UTC] Número de clientes encontrados: 0
+[06-Dec-2024 03:48:48 UTC] Tipo de usuario: master
+[06-Dec-2024 03:49:33 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:49:33 UTC] Usuario admin (master) ha iniciado sesión exitosamente
+[06-Dec-2024 03:49:33 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:49:33 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 03:49:33 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 03:50:40 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:50:40 UTC] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[06-Dec-2024 03:50:41 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:50:51 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:50:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:51:06 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:32 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:37 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:45 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:45 UTC] ID del vendedor actual: 4
+[06-Dec-2024 03:53:45 UTC] Número de préstamos encontrados: 0
+[06-Dec-2024 03:53:45 UTC] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[06-Dec-2024 03:53:50 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:50 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 03:53:50 UTC] ID de usuario: 4
+[06-Dec-2024 03:53:50 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 03:53:50 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 03:53:50 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 03:53:50 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 03:53:50 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 03:53:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:58 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:53:58 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 03:53:58 UTC] ID de usuario: 4
+[06-Dec-2024 03:53:58 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 03:53:58 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 03:53:58 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 03:53:58 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 03:53:58 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 03:54:00 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:54:29 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:54:31 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:54:31 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 03:54:31 UTC] ID de usuario: 4
+[06-Dec-2024 03:54:31 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 03:54:31 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 03:54:31 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 03:54:31 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 03:54:31 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 03:55:06 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:57:30 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:57:30 UTC] ID del vendedor actual: 4
+[06-Dec-2024 03:57:30 UTC] Número de préstamos encontrados: 0
+[06-Dec-2024 03:57:30 UTC] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[06-Dec-2024 03:57:45 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:57:45 UTC] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[06-Dec-2024 03:57:45 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 03:57:59 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:00:48 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:00:48 UTC] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[06-Dec-2024 04:00:48 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:00:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:01:05 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:01:05 UTC] ID del vendedor actual: 4
+[06-Dec-2024 04:01:05 UTC] Número de préstamos encontrados: 1
+[06-Dec-2024 04:01:05 UTC] Primer préstamo encontrado: Array
+(
+    [prestamo_id] => 1
+    [cliente_id] => 1
+    [monto_autorizado] => 10000.00
+    [monto_total] => 11000.00
+    [plazo_semanas] => 48
+    [tasa_interes] => 10.00
+    [estado] => Pendiente
+    [estado_solicitud] => aprobado
+    [frecuencia_pago] => quincenal
+    [nombre_completo] => Pepito Roco Martinez
+    [id_vendedor] => 4
+)
+
+[06-Dec-2024 04:01:05 UTC] Datos del préstamo: Array
+(
+    [prestamo_id] => 1
+    [cliente_id] => 1
+    [monto_autorizado] => 10000.00
+    [monto_total] => 11000.00
+    [plazo_semanas] => 48
+    [tasa_interes] => 10.00
+    [estado] => Pendiente
+    [estado_solicitud] => aprobado
+    [frecuencia_pago] => quincenal
+    [nombre_completo] => Pepito Roco Martinez
+    [id_vendedor] => 4
+)
+
+[06-Dec-2024 04:01:35 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:01:37 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:02:20 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:03:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:06:54 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:06:54 UTC] Usuario admin (master) ha iniciado sesión exitosamente
+[06-Dec-2024 04:06:54 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:06:54 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:06:54 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:07:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:07:53 UTC] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[06-Dec-2024 04:07:54 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:08:11 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:08:11 UTC] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[06-Dec-2024 04:08:11 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:08:16 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:08:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:08:53 UTC] Usuario admin (master) ha iniciado sesión exitosamente
+[06-Dec-2024 04:08:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:08:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:08:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:09:01 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:09:03 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:09:38 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:09:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:10:02 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:10:46 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:14:02 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:14:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:14:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:14:07 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:20:57 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:20:57 UTC] ID del vendedor actual: 1
+[06-Dec-2024 04:20:57 UTC] Número de préstamos encontrados: 0
+[06-Dec-2024 04:20:57 UTC] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[06-Dec-2024 04:21:22 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:21:58 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:21:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:21:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[06-Dec-2024 04:22:03 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:22:03 UTC] ID del vendedor actual: 1
+[06-Dec-2024 04:22:03 UTC] Número de préstamos encontrados: 0
+[06-Dec-2024 04:22:03 UTC] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[06-Dec-2024 04:24:21 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:24:35 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:24:35 UTC] Tipo de usuario: master
+[06-Dec-2024 04:24:35 UTC] ID de usuario: 1
+[06-Dec-2024 04:24:35 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[06-Dec-2024 04:24:35 UTC] Número de clientes encontrados: 0
+[06-Dec-2024 04:24:35 UTC] Tipo de usuario: master
+[06-Dec-2024 04:26:41 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:26:41 UTC] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[06-Dec-2024 04:26:41 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:26:48 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:26:48 UTC] PHP Warning:  Undefined variable $user in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 59
+[06-Dec-2024 04:26:50 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:26:50 UTC] PHP Warning:  Undefined variable $user in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 59
+[06-Dec-2024 04:26:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:26:53 UTC] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[06-Dec-2024 04:26:53 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:27:08 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:29:13 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:29:26 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:29:26 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:29:26 UTC] ID de usuario: 4
+[06-Dec-2024 04:29:26 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 04:29:26 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 04:29:26 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:29:26 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:29:26 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:29:29 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:29:59 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:30:09 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:30:09 UTC] ID del vendedor actual: 4
+[06-Dec-2024 04:30:09 UTC] Número de préstamos encontrados: 0
+[06-Dec-2024 04:30:09 UTC] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[06-Dec-2024 04:30:32 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:30:32 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:30:32 UTC] ID de usuario: 4
+[06-Dec-2024 04:30:32 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 04:30:32 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 04:30:32 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:30:32 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:30:32 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:30:40 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:30:40 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:30:40 UTC] ID de usuario: 4
+[06-Dec-2024 04:30:40 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 04:30:40 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 04:30:40 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:30:40 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:30:40 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:30:44 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:34:15 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:34:15 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:34:15 UTC] ID de usuario: 4
+[06-Dec-2024 04:34:15 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 04:34:15 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 04:34:15 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:34:15 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:34:15 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:34:23 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:34:39 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:34:39 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:34:39 UTC] ID de usuario: 4
+[06-Dec-2024 04:34:39 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[06-Dec-2024 04:34:39 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 04:34:39 UTC] Tipo de usuario: vendedor
+[06-Dec-2024 04:34:39 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:34:39 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:35:20 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:35:20 UTC] Tipo de usuario: master
+[06-Dec-2024 04:35:20 UTC] ID de usuario: 1
+[06-Dec-2024 04:35:20 UTC] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[06-Dec-2024 04:35:20 UTC] Número de clientes encontrados: 1
+[06-Dec-2024 04:35:20 UTC] Tipo de usuario: master
+[06-Dec-2024 04:35:20 UTC] PHP Warning:  Undefined array key "latitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:35:20 UTC] PHP Warning:  Undefined array key "longitud" in /home/droopyst/public_html/efloresrTest/Financiera/clientes.php on line 162
+[06-Dec-2024 04:35:31 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:35:31 UTC] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[06-Dec-2024 04:35:31 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:35:34 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:42:30 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:42:32 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:42:32 UTC] ID del vendedor actual: 4
+[06-Dec-2024 04:42:32 UTC] Número de préstamos encontrados: 1
+[06-Dec-2024 04:42:32 UTC] Primer préstamo encontrado: Array
+(
+    [prestamo_id] => 1
+    [cliente_id] => 1
+    [monto_autorizado] => 10000.00
+    [monto_total] => 14500.00
+    [plazo_semanas] => 12
+    [tasa_interes] => 45.00
+    [estado] => Pendiente
+    [estado_solicitud] => aprobado
+    [frecuencia_pago] => semanal
+    [nombre_completo] => Víctor
+    [id_vendedor] => 4
+)
+
+[06-Dec-2024 04:42:32 UTC] Datos del préstamo: Array
+(
+    [prestamo_id] => 1
+    [cliente_id] => 1
+    [monto_autorizado] => 10000.00
+    [monto_total] => 14500.00
+    [plazo_semanas] => 12
+    [tasa_interes] => 45.00
+    [estado] => Pendiente
+    [estado_solicitud] => aprobado
+    [frecuencia_pago] => semanal
+    [nombre_completo] => Víctor
+    [id_vendedor] => 4
+)
+
+[06-Dec-2024 04:44:18 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:44:40 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[06-Dec-2024 04:48:36 UTC] PHP Warning:  Undefined variable $port in /home/droopyst/public_html/efloresrTest/Financiera/config.php on line 10
+[19-Dec-2024 22:20:54 America/Mexico_City] Error de conexión: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[19-Dec-2024 22:21:02 America/Mexico_City] Error de conexión: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[19-Dec-2024 22:21:05 America/Mexico_City] Error de conexión: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[20-Dec-2024 09:46:39 America/Mexico_City] Error de conexión: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[20-Dec-2024 20:42:46 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[20-Dec-2024 20:42:46 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[20-Dec-2024 20:42:46 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 20:42:50 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 20:42:50 America/Mexico_City] ID de usuario: 4
+[20-Dec-2024 20:42:50 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[20-Dec-2024 20:42:50 America/Mexico_City] Número de clientes encontrados: 1
+[20-Dec-2024 20:42:50 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:06:19 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[20-Dec-2024 22:06:19 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[20-Dec-2024 22:06:33 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[20-Dec-2024 22:06:33 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[20-Dec-2024 22:06:34 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 22:07:08 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:07:08 America/Mexico_City] ID de usuario: 4
+[20-Dec-2024 22:07:08 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[20-Dec-2024 22:07:08 America/Mexico_City] Número de clientes encontrados: 1
+[20-Dec-2024 22:07:08 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:07:25 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:07:25 America/Mexico_City] ID de usuario: 4
+[20-Dec-2024 22:07:25 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[20-Dec-2024 22:07:25 America/Mexico_City] Número de clientes encontrados: 1
+[20-Dec-2024 22:07:25 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:07:39 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:07:39 America/Mexico_City] ID de usuario: 4
+[20-Dec-2024 22:07:39 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[20-Dec-2024 22:07:39 America/Mexico_City] Número de clientes encontrados: 1
+[20-Dec-2024 22:07:39 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:08:07 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[20-Dec-2024 22:08:07 America/Mexico_City] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[20-Dec-2024 22:08:07 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Pendiente
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 22:08:12 America/Mexico_City] Tipo de usuario: autorizador
+[20-Dec-2024 22:08:12 America/Mexico_City] ID de usuario: 3
+[20-Dec-2024 22:08:12 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[20-Dec-2024 22:08:12 America/Mexico_City] Número de clientes encontrados: 1
+[20-Dec-2024 22:08:12 America/Mexico_City] Tipo de usuario: autorizador
+[20-Dec-2024 22:08:58 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[20-Dec-2024 22:08:58 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[20-Dec-2024 22:08:59 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 22:09:20 America/Mexico_City] ID del vendedor actual: 4
+[20-Dec-2024 22:09:20 America/Mexico_City] Número de préstamos encontrados: 1
+[20-Dec-2024 22:09:20 America/Mexico_City] Primer préstamo encontrado: Array
+(
+    [prestamo_id] => 2
+    [cliente_id] => 1
+    [monto_autorizado] => 20000.00
+    [monto_total] => 28000.00
+    [plazo_semanas] => 12
+    [tasa_interes] => 40.00
+    [estado] => Pendiente
+    [estado_solicitud] => aprobado
+    [frecuencia_pago] => semanal
+    [nombre_completo] => Eduardo Brandon Flores Ramirez
+    [id_vendedor] => 4
+)
+
+[20-Dec-2024 22:09:20 America/Mexico_City] Datos del préstamo: Array
+(
+    [prestamo_id] => 2
+    [cliente_id] => 1
+    [monto_autorizado] => 20000.00
+    [monto_total] => 28000.00
+    [plazo_semanas] => 12
+    [tasa_interes] => 40.00
+    [estado] => Pendiente
+    [estado_solicitud] => aprobado
+    [frecuencia_pago] => semanal
+    [nombre_completo] => Eduardo Brandon Flores Ramirez
+    [id_vendedor] => 4
+)
+
+[20-Dec-2024 22:09:32 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 22:11:32 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 22:16:12 America/Mexico_City] ID del vendedor actual: 4
+[20-Dec-2024 22:16:12 America/Mexico_City] Número de préstamos encontrados: 0
+[20-Dec-2024 22:16:12 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[20-Dec-2024 22:16:15 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:16:15 America/Mexico_City] ID de usuario: 4
+[20-Dec-2024 22:16:15 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[20-Dec-2024 22:16:15 America/Mexico_City] Número de clientes encontrados: 1
+[20-Dec-2024 22:16:15 America/Mexico_City] Tipo de usuario: vendedor
+[20-Dec-2024 22:19:11 America/Mexico_City] ID del vendedor actual: 4
+[20-Dec-2024 22:19:11 America/Mexico_City] Número de préstamos encontrados: 0
+[20-Dec-2024 22:19:11 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[20-Dec-2024 22:19:31 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[20-Dec-2024 22:19:31 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[20-Dec-2024 22:19:32 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[20-Dec-2024 22:19:32 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[20-Dec-2024 22:19:32 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[22-Dec-2024 13:24:55 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[22-Dec-2024 13:24:55 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[22-Dec-2024 13:25:03 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[22-Dec-2024 13:25:03 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[22-Dec-2024 13:25:03 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[22-Dec-2024 13:25:03 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[22-Dec-2024 13:25:03 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:31:42 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[24-Dec-2024 14:31:42 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[24-Dec-2024 14:31:42 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:31:47 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:31:47 America/Mexico_City] ID de usuario: 4
+[24-Dec-2024 14:31:47 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[24-Dec-2024 14:31:47 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:31:47 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:38:09 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[24-Dec-2024 14:38:09 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[24-Dec-2024 14:38:09 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:38:09 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:09 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:49 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:38:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:49 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:50 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:38:50 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:50 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:51 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:38:51 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:38:51 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:42:51 America/Mexico_City] Tipo de usuario: master
+[24-Dec-2024 14:42:51 America/Mexico_City] ID de usuario: 1
+[24-Dec-2024 14:42:51 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[24-Dec-2024 14:42:51 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:42:51 America/Mexico_City] Tipo de usuario: master
+[24-Dec-2024 14:43:10 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[24-Dec-2024 14:43:10 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[24-Dec-2024 14:43:10 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:43:11 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:43:11 America/Mexico_City] ID de usuario: 4
+[24-Dec-2024 14:43:11 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[24-Dec-2024 14:43:11 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:43:11 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:43:17 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:43:17 America/Mexico_City] ID de usuario: 4
+[24-Dec-2024 14:43:17 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[24-Dec-2024 14:43:17 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:43:17 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:44:07 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:44:07 America/Mexico_City] ID de usuario: 4
+[24-Dec-2024 14:44:07 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[24-Dec-2024 14:44:07 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:44:07 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:44:22 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:44:22 America/Mexico_City] ID de usuario: 4
+[24-Dec-2024 14:44:22 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[24-Dec-2024 14:44:22 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:44:22 America/Mexico_City] Tipo de usuario: vendedor
+[24-Dec-2024 14:46:32 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[24-Dec-2024 14:46:32 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[24-Dec-2024 14:46:32 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[24-Dec-2024 14:46:32 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:46:32 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[24-Dec-2024 14:47:10 America/Mexico_City] Tipo de usuario: master
+[24-Dec-2024 14:47:10 America/Mexico_City] ID de usuario: 1
+[24-Dec-2024 14:47:10 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[24-Dec-2024 14:47:10 America/Mexico_City] Número de clientes encontrados: 1
+[24-Dec-2024 14:47:10 America/Mexico_City] Tipo de usuario: master
+[05-Jan-2025 13:35:52 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[05-Jan-2025 13:35:52 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[05-Jan-2025 13:36:04 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[05-Jan-2025 13:36:04 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[05-Jan-2025 13:36:04 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[05-Jan-2025 13:36:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[05-Jan-2025 13:36:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[05-Jan-2025 13:36:46 America/Mexico_City] ID del vendedor actual: 1
+[05-Jan-2025 13:36:46 America/Mexico_City] Número de préstamos encontrados: 0
+[05-Jan-2025 13:36:46 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[05-Jan-2025 13:36:57 America/Mexico_City] Tipo de usuario: master
+[05-Jan-2025 13:36:57 America/Mexico_City] ID de usuario: 1
+[05-Jan-2025 13:36:57 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[05-Jan-2025 13:36:57 America/Mexico_City] Número de clientes encontrados: 1
+[05-Jan-2025 13:36:57 America/Mexico_City] Tipo de usuario: master
+[05-Jan-2025 13:37:15 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[05-Jan-2025 13:37:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[05-Jan-2025 13:37:15 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[05-Jan-2025 13:38:24 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[05-Jan-2025 13:38:24 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[05-Jan-2025 13:38:24 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[05-Jan-2025 13:38:31 America/Mexico_City] ID del vendedor actual: 4
+[05-Jan-2025 13:38:31 America/Mexico_City] Número de préstamos encontrados: 0
+[05-Jan-2025 13:38:31 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[05-Jan-2025 13:38:34 America/Mexico_City] Tipo de usuario: vendedor
+[05-Jan-2025 13:38:34 America/Mexico_City] ID de usuario: 4
+[05-Jan-2025 13:38:34 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[05-Jan-2025 13:38:34 America/Mexico_City] Número de clientes encontrados: 1
+[05-Jan-2025 13:38:34 America/Mexico_City] Tipo de usuario: vendedor
+[07-Jan-2025 10:03:08 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[07-Jan-2025 10:03:08 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[07-Jan-2025 10:03:08 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[07-Jan-2025 10:03:08 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[07-Jan-2025 10:03:08 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[07-Jan-2025 21:21:32 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[07-Jan-2025 21:21:32 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[07-Jan-2025 21:21:32 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[07-Jan-2025 21:21:32 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[07-Jan-2025 21:21:32 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[07-Jan-2025 21:22:01 America/Mexico_City] ID del vendedor actual: 1
+[07-Jan-2025 21:22:01 America/Mexico_City] Número de préstamos encontrados: 0
+[07-Jan-2025 21:22:01 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[07-Jan-2025 21:22:42 America/Mexico_City] ID del vendedor actual: 1
+[07-Jan-2025 21:22:42 America/Mexico_City] Número de préstamos encontrados: 0
+[07-Jan-2025 21:22:42 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[07-Jan-2025 21:22:50 America/Mexico_City] Tipo de usuario: master
+[07-Jan-2025 21:22:50 America/Mexico_City] ID de usuario: 1
+[07-Jan-2025 21:22:50 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[07-Jan-2025 21:22:50 America/Mexico_City] Número de clientes encontrados: 1
+[07-Jan-2025 21:22:50 America/Mexico_City] Tipo de usuario: master
+[07-Jan-2025 21:23:04 America/Mexico_City] Tipo de usuario: master
+[07-Jan-2025 21:23:04 America/Mexico_City] ID de usuario: 1
+[07-Jan-2025 21:23:04 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[07-Jan-2025 21:23:04 America/Mexico_City] Número de clientes encontrados: 1
+[07-Jan-2025 21:23:04 America/Mexico_City] Tipo de usuario: master
+[09-Jan-2025 12:38:04 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[09-Jan-2025 12:38:04 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[09-Jan-2025 12:38:04 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[09-Jan-2025 12:38:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[09-Jan-2025 12:38:04 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[09-Jan-2025 12:38:42 America/Mexico_City] ID del vendedor actual: 1
+[09-Jan-2025 12:38:42 America/Mexico_City] Número de préstamos encontrados: 0
+[09-Jan-2025 12:38:42 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[09-Jan-2025 12:40:22 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[09-Jan-2025 12:40:22 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[09-Jan-2025 12:40:22 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[09-Jan-2025 12:45:00 America/Mexico_City] Tipo de usuario: vendedor
+[09-Jan-2025 12:45:00 America/Mexico_City] ID de usuario: 4
+[09-Jan-2025 12:45:00 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[09-Jan-2025 12:45:00 America/Mexico_City] Número de clientes encontrados: 1
+[09-Jan-2025 12:45:00 America/Mexico_City] Tipo de usuario: vendedor
+[14-Jan-2025 17:06:56 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[14-Jan-2025 17:06:56 America/Mexico_City] Intento de inicio de sesión fallido para el usuario: 
+[15-Jan-2025 17:36:00 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 17:36:00 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[15-Jan-2025 17:36:01 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 17:36:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 17:36:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 18:05:27 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 18:05:27 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[15-Jan-2025 18:05:27 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 18:05:27 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 18:05:27 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 18:07:20 America/Mexico_City] ID del vendedor actual: 1
+[15-Jan-2025 18:07:20 America/Mexico_City] Número de préstamos encontrados: 0
+[15-Jan-2025 18:07:20 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[15-Jan-2025 18:29:29 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 18:29:29 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[15-Jan-2025 18:29:29 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 18:29:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 18:29:29 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 18:30:05 America/Mexico_City] Tipo de usuario: master
+[15-Jan-2025 18:30:05 America/Mexico_City] ID de usuario: 1
+[15-Jan-2025 18:30:05 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[15-Jan-2025 18:30:05 America/Mexico_City] Número de clientes encontrados: 1
+[15-Jan-2025 18:30:05 America/Mexico_City] Tipo de usuario: master
+[15-Jan-2025 18:36:05 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 18:36:05 America/Mexico_City] Intento de inicio de sesión fallido para el usuario: vendedor
+[15-Jan-2025 18:36:21 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 18:36:21 America/Mexico_City] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[15-Jan-2025 18:36:21 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 19:32:23 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 19:32:23 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[15-Jan-2025 19:32:23 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 19:32:23 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 19:32:23 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[15-Jan-2025 19:37:45 America/Mexico_City] ID del vendedor actual: 1
+[15-Jan-2025 19:37:45 America/Mexico_City] Número de préstamos encontrados: 0
+[15-Jan-2025 19:37:45 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[15-Jan-2025 19:40:36 America/Mexico_City] Tipo de usuario: master
+[15-Jan-2025 19:40:36 America/Mexico_City] ID de usuario: 1
+[15-Jan-2025 19:40:36 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[15-Jan-2025 19:40:36 America/Mexico_City] Número de clientes encontrados: 1
+[15-Jan-2025 19:40:36 America/Mexico_City] Tipo de usuario: master
+[15-Jan-2025 19:41:15 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 19:41:15 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[15-Jan-2025 19:41:15 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 19:41:44 America/Mexico_City] ID del vendedor actual: 4
+[15-Jan-2025 19:41:44 America/Mexico_City] Número de préstamos encontrados: 0
+[15-Jan-2025 19:41:44 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 4
+[15-Jan-2025 19:42:22 America/Mexico_City] Tipo de usuario: vendedor
+[15-Jan-2025 19:42:22 America/Mexico_City] ID de usuario: 4
+[15-Jan-2025 19:42:22 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id WHERE c.id_vendedor = :usuario_id ORDER BY c.id DESC
+[15-Jan-2025 19:42:22 America/Mexico_City] Número de clientes encontrados: 1
+[15-Jan-2025 19:42:22 America/Mexico_City] Tipo de usuario: vendedor
+[15-Jan-2025 19:43:00 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[15-Jan-2025 19:43:00 America/Mexico_City] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[15-Jan-2025 19:43:00 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[15-Jan-2025 19:44:33 America/Mexico_City] Tipo de usuario: autorizador
+[15-Jan-2025 19:44:33 America/Mexico_City] ID de usuario: 3
+[15-Jan-2025 19:44:33 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[15-Jan-2025 19:44:33 America/Mexico_City] Número de clientes encontrados: 1
+[15-Jan-2025 19:44:33 America/Mexico_City] Tipo de usuario: autorizador
+[15-Jan-2025 19:45:04 America/Mexico_City] Tipo de usuario: autorizador
+[15-Jan-2025 19:45:04 America/Mexico_City] ID de usuario: 3
+[15-Jan-2025 19:45:04 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[15-Jan-2025 19:45:04 America/Mexico_City] Número de clientes encontrados: 1
+[15-Jan-2025 19:45:04 America/Mexico_City] Tipo de usuario: autorizador
+[15-Jan-2025 19:45:39 America/Mexico_City] Tipo de usuario: autorizador
+[15-Jan-2025 19:45:39 America/Mexico_City] ID de usuario: 3
+[15-Jan-2025 19:45:39 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[15-Jan-2025 19:45:39 America/Mexico_City] Número de clientes encontrados: 1
+[15-Jan-2025 19:45:39 America/Mexico_City] Tipo de usuario: autorizador
+[19-Jan-2025 13:52:18 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[19-Jan-2025 13:52:18 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[19-Jan-2025 13:52:18 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[19-Jan-2025 13:52:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[19-Jan-2025 13:52:18 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[19-Jan-2025 13:53:07 America/Mexico_City] ID del vendedor actual: 1
+[19-Jan-2025 13:53:07 America/Mexico_City] Número de préstamos encontrados: 0
+[19-Jan-2025 13:53:07 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[19-Jan-2025 13:53:36 America/Mexico_City] ID del vendedor actual: 1
+[19-Jan-2025 13:53:36 America/Mexico_City] Número de préstamos encontrados: 0
+[19-Jan-2025 13:53:36 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[19-Jan-2025 13:53:45 America/Mexico_City] ID del vendedor actual: 1
+[19-Jan-2025 13:53:45 America/Mexico_City] Número de préstamos encontrados: 0
+[19-Jan-2025 13:53:45 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[19-Jan-2025 13:56:37 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[19-Jan-2025 13:56:37 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[19-Jan-2025 13:56:37 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[19-Jan-2025 13:56:37 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[19-Jan-2025 13:56:37 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[19-Jan-2025 13:58:41 America/Mexico_City] ID del vendedor actual: 1
+[19-Jan-2025 13:58:41 America/Mexico_City] Número de préstamos encontrados: 0
+[19-Jan-2025 13:58:41 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[19-Jan-2025 13:58:44 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[19-Jan-2025 13:58:44 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[19-Jan-2025 13:58:44 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[19-Jan-2025 14:06:54 America/Mexico_City] Tipo de usuario: master
+[19-Jan-2025 14:06:54 America/Mexico_City] ID de usuario: 1
+[19-Jan-2025 14:06:54 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[19-Jan-2025 14:06:54 America/Mexico_City] Número de clientes encontrados: 1
+[19-Jan-2025 14:06:54 America/Mexico_City] Tipo de usuario: master
+[19-Jan-2025 14:08:12 America/Mexico_City] Tipo de usuario: master
+[19-Jan-2025 14:08:12 America/Mexico_City] ID de usuario: 1
+[19-Jan-2025 14:08:12 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[19-Jan-2025 14:08:12 America/Mexico_City] Número de clientes encontrados: 1
+[19-Jan-2025 14:08:12 America/Mexico_City] Tipo de usuario: master
+[18-Mar-2025 11:09:05 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[18-Mar-2025 11:09:05 America/Mexico_City] Intento de inicio de sesión fallido para el usuario: admin
+[04-Apr-2025 15:52:42 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[04-Apr-2025 15:52:42 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[04-Apr-2025 15:52:42 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[13-Apr-2025 18:46:02 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[13-Apr-2025 18:46:02 America/Mexico_City] Usuario autorizador (autorizador) ha iniciado sesión exitosamente
+[13-Apr-2025 18:46:02 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[13-Apr-2025 18:49:48 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:49:48 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:49:48 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:49:48 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:49:48 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:49:54 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[13-Apr-2025 18:50:57 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:50:57 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:50:57 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:50:57 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:50:57 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:51:20 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:51:20 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:51:20 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:51:20 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:51:20 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:51:26 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:51:26 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:51:26 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:51:26 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:51:26 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:58:59 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:58:59 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:58:59 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:58:59 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:58:59 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:59:12 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:59:12 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:59:12 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:59:12 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:59:12 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:59:44 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 18:59:44 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 18:59:44 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 18:59:44 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 18:59:44 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 19:01:25 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 19:01:25 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 19:01:25 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 19:01:25 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 19:01:25 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 19:03:07 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 19:03:07 America/Mexico_City] ID de usuario: 3
+[13-Apr-2025 19:03:07 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 19:03:07 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 19:03:07 America/Mexico_City] Tipo de usuario: autorizador
+[13-Apr-2025 19:03:59 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[13-Apr-2025 19:03:59 America/Mexico_City] Intento de inicio de sesión fallido para el usuario: administrador 
+[13-Apr-2025 19:10:23 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[13-Apr-2025 19:10:23 America/Mexico_City] Intento de inicio de sesión fallido para el usuario: administrador 
+[13-Apr-2025 19:11:01 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[13-Apr-2025 19:11:01 America/Mexico_City] Usuario admin (master) ha iniciado sesión exitosamente
+[13-Apr-2025 19:11:01 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[13-Apr-2025 19:11:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[13-Apr-2025 19:11:01 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[13-Apr-2025 19:11:11 America/Mexico_City] ID del vendedor actual: 1
+[13-Apr-2025 19:11:11 America/Mexico_City] Número de préstamos encontrados: 0
+[13-Apr-2025 19:11:11 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[13-Apr-2025 19:11:26 America/Mexico_City] Tipo de usuario: master
+[13-Apr-2025 19:11:26 America/Mexico_City] ID de usuario: 1
+[13-Apr-2025 19:11:26 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 19:11:26 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 19:11:26 America/Mexico_City] Tipo de usuario: master
+[13-Apr-2025 19:11:46 America/Mexico_City] Tipo de usuario: master
+[13-Apr-2025 19:11:46 America/Mexico_City] ID de usuario: 1
+[13-Apr-2025 19:11:46 America/Mexico_City] SQL Query: SELECT 
+        c.*,
+        COALESCE(p.total_prestamos, 0) as total_prestamos,
+        u.nombre as nombre_vendedor
+    FROM clientes c
+    LEFT JOIN usuarios u ON c.id_vendedor = u.id
+    LEFT JOIN (
+        SELECT cliente_id, COUNT(*) as total_prestamos 
+        FROM prestamos 
+        GROUP BY cliente_id
+    ) p ON c.id = p.cliente_id ORDER BY c.id DESC
+[13-Apr-2025 19:11:46 America/Mexico_City] Número de clientes encontrados: 1
+[13-Apr-2025 19:11:46 America/Mexico_City] Tipo de usuario: master
+[13-Apr-2025 19:11:50 America/Mexico_City] ID del vendedor actual: 1
+[13-Apr-2025 19:11:50 America/Mexico_City] Número de préstamos encontrados: 0
+[13-Apr-2025 19:11:50 America/Mexico_City] No se encontraron préstamos sin pagarés para el vendedor ID: 1
+[13-Apr-2025 19:11:52 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+
+[13-Apr-2025 19:11:52 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[13-Apr-2025 19:11:52 America/Mexico_City] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/droopyst/public_html/efloresrTest/Financiera/index.php on line 150
+[13-Apr-2025 19:12:13 America/Mexico_City] PHP Notice:  Only variables should be passed by reference in /home/droopyst/public_html/efloresrTest/Financiera/login.php on line 16
+[13-Apr-2025 19:12:13 America/Mexico_City] Usuario liamaron (vendedor) ha iniciado sesión exitosamente
+[13-Apr-2025 19:12:13 America/Mexico_City] Notificaciones procesadas: Array
+(
+    [0] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-21 04:07:39
+        )
+
+    [1] => Array
+        (
+            [nombre_cliente] => Eduardo Brandon Flores Ramirez
+            [monto] => 20000.00
+            [estado_solicitud] => Aprobado
+            [fecha] => 2024-12-14 04:10:12
+        )
+
+)
+

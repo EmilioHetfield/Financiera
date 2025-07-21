@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.2
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 13-12-2024 a las 07:35:07
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Servidor: localhost:3306
+-- Tiempo de generación: 21-07-2025 a las 01:08:33
+-- Versión del servidor: 10.6.22-MariaDB
+-- Versión de PHP: 8.3.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `financiera`
+-- Base de datos: `droopyst_testFinanciera`
 --
 
 -- --------------------------------------------------------
@@ -53,6 +53,13 @@ CREATE TABLE `clientes` (
   `estado` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nombre_completo`, `fecha_nacimiento`, `email`, `telefono`, `genero`, `id_vendedor`, `ruta_firma`, `estado`) VALUES
+(1, 'Eduardo Brandon Flores Ramirez', '1992-02-08', 'ejemplo@ejemplo.com', '2313215656', 'M', 4, 'firma_1_1734149412.png', 'Activo');
+
 -- --------------------------------------------------------
 
 --
@@ -75,6 +82,13 @@ CREATE TABLE `condiciones_vivienda` (
   `gas` enum('Si','No') NOT NULL,
   `observaciones` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `condiciones_vivienda`
+--
+
+INSERT INTO `condiciones_vivienda` (`id`, `id_cliente`, `internet`, `telefono_fijo`, `telefono_movil`, `refrigerador`, `luz_electrica`, `agua_potable`, `auto_propio`, `tv_cable`, `alumbrado_publico`, `estufa`, `gas`, `observaciones`) VALUES
+(1, 1, 'Si', 'No', 'Si', 'Si', 'Si', 'Si', 'No', 'No', 'Si', 'Si', 'Si', '');
 
 -- --------------------------------------------------------
 
@@ -100,6 +114,13 @@ CREATE TABLE `datos_financieros` (
   `descripcion_otros_gastos` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `datos_financieros`
+--
+
+INSERT INTO `datos_financieros` (`id`, `id_cliente`, `ingresos_mensuales`, `gastos_mensuales`, `otros_ingresos`, `fuente_otros_ingresos`, `renta_mensual`, `pago_auto`, `gastos_alimentacion`, `gastos_servicios`, `gastos_transporte`, `gastos_educacion`, `deudas_creditos`, `otros_gastos`, `descripcion_otros_gastos`) VALUES
+(1, 1, 17000.00, 10105.00, 5000.00, 'Freelancer', 2600.00, 0.00, 4000.00, 105.00, 600.00, 2800.00, 0.00, 0.00, '');
+
 -- --------------------------------------------------------
 
 --
@@ -120,6 +141,13 @@ CREATE TABLE `datos_laborales` (
   `extension` varchar(10) DEFAULT NULL,
   `codigo_postal` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `datos_laborales`
+--
+
+INSERT INTO `datos_laborales` (`id`, `id_cliente`, `tipo_empleo`, `ocupacion`, `nombre_empresa`, `periodicidad_ingresos`, `antiguedad_anos`, `antiguedad_meses`, `direccion`, `telefono`, `extension`, `codigo_postal`) VALUES
+(1, 1, 'Tiempo completo', 'Empleado', 'Grupo Tribuna', 'Mensual', 2, 6, 'La paz', '1234567891', '33', '78150');
 
 -- --------------------------------------------------------
 
@@ -146,6 +174,13 @@ CREATE TABLE `datos_personales` (
   `ocupacion_conyuge` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `datos_personales`
+--
+
+INSERT INTO `datos_personales` (`id`, `id_cliente`, `rfc`, `curp`, `estado_civil`, `dependientes_economicos`, `tipo_identificacion`, `no_identificacion`, `lugar_nacimiento`, `pais`, `tipo_vivienda`, `tiempo_vivienda`, `nombre_conyuge`, `fecha_nac_conyuge`, `telefono_conyuge`, `ocupacion_conyuge`) VALUES
+(1, 1, 'FORE920208EC5', 'FORE920208HPLLMD05', 'Casado', 1, 'INE', '32132453121asdasdas', '', 'México', 'Rentada', 26, 'Diana Flores Mendoza', '1993-10-03', '2224809995', 'Comerciante');
+
 -- --------------------------------------------------------
 
 --
@@ -159,6 +194,14 @@ CREATE TABLE `dependientes` (
   `parentesco` varchar(50) NOT NULL,
   `ocupacion` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `dependientes`
+--
+
+INSERT INTO `dependientes` (`id`, `id_datos_personales`, `nombre`, `parentesco`, `ocupacion`) VALUES
+(1, 1, 'Liam Aaron Flores Flores', 'Hijo/a', 'Estudiante'),
+(2, 1, 'Alondra Itzayana Ramirez Flores', 'Hijo/a', 'Estudiante');
 
 -- --------------------------------------------------------
 
@@ -176,6 +219,13 @@ CREATE TABLE `direcciones` (
   `codigo_postal` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `direcciones`
+--
+
+INSERT INTO `direcciones` (`id`, `usuario_id`, `cliente_id`, `direccion`, `ciudad`, `estado`, `codigo_postal`) VALUES
+(1, NULL, 1, 'falsa', 'puebla', 'puebla', '72150');
+
 -- --------------------------------------------------------
 
 --
@@ -191,6 +241,13 @@ CREATE TABLE `documentos` (
   `descripcion` text DEFAULT NULL,
   `tipo_documento` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `documentos`
+--
+
+INSERT INTO `documentos` (`id`, `cliente_id`, `nombre_archivo`, `ruta`, `fecha_subida`, `descripcion`, `tipo_documento`) VALUES
+(2, 1, '17373172335967732885971982548078.jpg', 'uploads/documentos/1/678d5b91e9d56_20250119.jpg', '2025-01-19 20:07:45', 'Hoja', 'ine');
 
 -- --------------------------------------------------------
 
@@ -230,6 +287,14 @@ CREATE TABLE `pagares` (
   `estado` enum('Pendiente','Pagado','Vencido') NOT NULL DEFAULT 'Pendiente'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `pagares`
+--
+
+INSERT INTO `pagares` (`id`, `prestamo_id`, `tipo_pagare`, `nombre_cliente`, `monto`, `fecha`, `fecha_limite_pago`, `ruta_firma_cliente`, `nombre_aval`, `direccion_aval`, `telefono_aval`, `ruta_firma_aval`, `multa`, `estado`) VALUES
+(1, 1, 'con_aval', 'Eduardo Brandon Flores Ramirez', 20000.00, '2024-12-13', '2025-05-30', 'uploads/firmas/firma_cliente_1734149818_675d06bae60c5.png', 'Emilio Mendoza', 'Falsa', '1234567894', 'uploads/firmas/firma_aval_1734149818_675d06bae6188.png', 0.00, 'Pendiente'),
+(2, 2, 'normal', 'Eduardo Brandon Flores Ramirez', 20000.00, '2024-12-20', '2025-03-14', 'uploads/firmas/firma_cliente_1734754170_67663f7ab49da.png', NULL, NULL, NULL, NULL, 0.00, 'Pendiente');
+
 -- --------------------------------------------------------
 
 --
@@ -246,6 +311,15 @@ CREATE TABLE `pagos` (
   `registrado_por` bigint(20) NOT NULL,
   `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `pagos`
+--
+
+INSERT INTO `pagos` (`id`, `pagare_id`, `tipo_pago`, `monto`, `fecha_pago`, `observaciones`, `registrado_por`, `fecha_registro`) VALUES
+(1, 1, 'preferente', 833.33, '2024-12-13', 'este es un ejemplo', 4, '2024-12-14 04:18:10'),
+(2, 1, 'preferente', 25000.00, '2024-12-13', 'casi finalizado', 4, '2024-12-14 04:18:39'),
+(3, 2, 'preferente', 100.00, '2025-01-15', '', 4, '2025-01-16 01:42:10');
 
 -- --------------------------------------------------------
 
@@ -275,6 +349,14 @@ CREATE TABLE `prestamos` (
   `frecuencia_pago` enum('semanal','quincenal') NOT NULL DEFAULT 'semanal'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `prestamos`
+--
+
+INSERT INTO `prestamos` (`id`, `cliente_id`, `monto`, `plazo`, `tasa_interes`, `estado`, `ruta_firma_prestamo`, `fecha_solicitud`, `estado_solicitud`, `monto_autorizado`, `plazo_semanas`, `fecha_autorizacion`, `fecha_primer_pago`, `fecha_ultimo_pago`, `autorizado_por`, `saldo_restante`, `frecuencia_pago`) VALUES
+(1, 1, 26000.00, 6, 30.00, 'Completado', 'firma_1734149412_675d0524893b4_1734149412.png', '2024-12-14 04:10:12', 'aprobado', 20000.00, 24, '2024-12-14 04:14:16', '2024-12-23', '2025-06-02', 3, 0.00, 'semanal'),
+(2, 1, 20000.00, 24, 40.00, '', '../firmas/firma_cliente_1.png', '2024-12-21 04:07:39', 'aprobado', 20000.00, 12, '2024-12-21 04:08:46', '2024-12-23', '2025-03-10', 3, 27900.00, 'semanal');
+
 -- --------------------------------------------------------
 
 --
@@ -289,6 +371,14 @@ CREATE TABLE `referencias` (
   `telefono` varchar(15) NOT NULL,
   `parentesco` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `referencias`
+--
+
+INSERT INTO `referencias` (`id`, `id_datos_personales`, `nombre`, `direccion`, `telefono`, `parentesco`) VALUES
+(1, 1, 'Sergio Fabian Flores', 'La Paz', '2134657894', 'Amigo'),
+(2, 1, 'Ricardo Cardenaz Lopez', 'Tlaxcala', '1245675314', 'Amigo');
 
 -- --------------------------------------------------------
 
@@ -442,49 +532,49 @@ ALTER TABLE `autorizaciones`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `condiciones_vivienda`
 --
 ALTER TABLE `condiciones_vivienda`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `datos_financieros`
 --
 ALTER TABLE `datos_financieros`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `datos_laborales`
 --
 ALTER TABLE `datos_laborales`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `datos_personales`
 --
 ALTER TABLE `datos_personales`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `dependientes`
 --
 ALTER TABLE `dependientes`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `direcciones`
 --
 ALTER TABLE `direcciones`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `documentos`
 --
 ALTER TABLE `documentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `log_prestamos`
@@ -496,25 +586,25 @@ ALTER TABLE `log_prestamos`
 -- AUTO_INCREMENT de la tabla `pagares`
 --
 ALTER TABLE `pagares`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `pagos`
 --
 ALTER TABLE `pagos`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `referencias`
 --
 ALTER TABLE `referencias`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

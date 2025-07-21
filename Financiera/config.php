@@ -5,7 +5,7 @@
 //  $password = "M3nd0z@2020.";
 //  $dbname = "droopyst_testFinanciera";
  // Configuración de la base de datos
- define('DB_HOST', 'localhost');
+ define('DB_HOST', '172.17.0.4');
  define('DB_NAME', 'droopyst_testFinanciera');
  define('DB_USER', 'droopyst_test');
  define('DB_PASS', 'M3nd0z@2020.');
